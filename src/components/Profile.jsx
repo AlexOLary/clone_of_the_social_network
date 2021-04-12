@@ -1,7 +1,8 @@
 import React from "react";
+import s from './Profile.module.css'
 
 const   Profile = () => {
-    return <div className='content'>
+    return <div className={s.content}>
         <div>
             <img
                 src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ0srMeYDswvR105qA8JfqIOYPiYHu2tY-qA&usqp=CAU'/>
@@ -16,11 +17,11 @@ const   Profile = () => {
             <div>
                 New post
             </div>
-            <div>
-                <div>
+            <div className='posts'>
+                <div className='item'>
                     post 1
                 </div>
-                <div>
+                <div className='item'>
                     post 2
                 </div>
             </div>
